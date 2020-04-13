@@ -14,10 +14,10 @@
 <body>
 
     <header>
-        <img src="./img/Hamburger_icon.svg.png" alt="icon" height="10%" width="5%"> 
+        <img id="menu-toggle" src="./img/Hamburger_icon.svg.png" alt="icon" height="10%" width="5%"> 
     </header>
 
-    <nav>
+    <nav id="side-nav">
         <ul>
             <li><a class="active" href="#">Home</a></li>
             <li><a href="#">My Channel</a></li>
@@ -35,7 +35,10 @@
 
     <script>
         $(document).ready(function(){
-            
+            $("#menu-toggle").click(function(){
+               $("#side-nav").toggle();
+
+            });
         });
     </script>
     
