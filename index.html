@@ -36,8 +36,8 @@
     <script>
         $(document).ready(function(){
             $("#menu-toggle").click(function(){
-               $("#side-nav").toggle(1000, function(){
-                   alert("Hi there");
+               $("#side-nav").fadeTo(1000, 0.5 ,function() {
+                   alert( " Hi there !");
                });
 
             });
